@@ -194,6 +194,47 @@
     }
 }
 
+nav {
+    .navbar-nav {
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px 20px;
+        width: 100%;
+        border-radius: 50px;
+        z-index: 1000;
+
+        .nav-link {
+            @include font("Flynas", 16px, 500, #212121);
+            color: #212121;
+            text-decoration: none;
+            margin-right: 20px;
+
+            &:hover {
+                color: #00B7AC;
+            }
+        }
+    }
+
+    .nav-icon {
+        background: #00B7AC;
+        padding: 10px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 1001;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .saw {
+        background: linear-gradient(to right, #dd3068, #f08624);
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+    }
+}
+
 .hero {
     h1 {
         @include font("Flynas", 330px, 500, #00B7AC);
