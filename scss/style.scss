@@ -625,3 +625,45 @@ nav {
         background-color: #F4E7DA;
     }
 }
+
+.sus-main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/img/bg-sus.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (max-width: 575.98px) {
+        height: auto;
+    }
+
+    .card-sus {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 1rem;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-title {
+            @include font("Flynas", 30px, 600, white);
+            line-height: 32px;
+            letter-spacing: -0.03em;
+
+            @media (max-width: 575.98px) {
+                @include font("Flynas", 1.5em, 600, white);
+                line-height: 30px;
+            }
+        }
+    }
+
+}

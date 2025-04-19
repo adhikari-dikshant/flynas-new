@@ -599,4 +599,51 @@ nav .saw {
 .destinations .card-4 {
   margin-top: 345px;
   background-color: #F4E7DA;
+}
+
+.sus-main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/img/bg-sus.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 575.98px) {
+  .sus-main {
+    height: auto;
+  }
+}
+.sus-main .card-sus {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1rem;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sus-main .card-sus:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+.sus-main .card-sus .card-title {
+  font-family: "Flynas";
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+}
+@media (max-width: 575.98px) {
+  .sus-main .card-sus .card-title {
+    font-family: "Flynas";
+    font-weight: 600;
+    font-size: 1.5em;
+    color: white;
+    line-height: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
