@@ -1,0 +1,522 @@
+/* Flynas Font Family - Complete Set */
+
+/* Extra Light (200) */
+@font-face {
+    font-family: 'Flynas';
+    src: url('./fonts/Flynas-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Light (300) */
+@font-face {
+    font-family: 'Flynas';
+    src: url('./fonts/Flynas-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Regular (400) */
+@font-face {
+    font-family: 'Flynas';
+    src: url('./fonts/Flynas-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Medium (500) */
+@font-face {
+    font-family: 'Flynas';
+    src: url('./fonts/Flynas-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* SemiBold (600) */
+@font-face {
+    font-family: 'Flynas';
+    src: url('./fonts/Flynas-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bold (700) */
+@font-face {
+    font-family: 'Flynas';
+    src: url('./fonts/Flynas-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ExtraBold (800) */
+@font-face {
+    font-family: 'Flynas';
+    src: url('./fonts/Flynas-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Black (900) */
+@font-face {
+    font-family: 'Flynas';
+    src: url('./fonts/Flynas-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Italic variants */
+
+/* ExtraLight Italic (200) */
+@font-face {
+    font-family: 'Flynas';
+    src: url('./fonts/Flynas-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Light Italic (300) */
+@font-face {
+    font-family: 'Flynas';
+    src: url('./fonts/Flynas-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Regular Italic (400) */
+@font-face {
+    font-family: 'Flynas';
+    src: url('./fonts/Flynas-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Medium Italic (500) */
+@font-face {
+    font-family: 'Flynas';
+    src: url('./fonts/Flynas-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* SemiBold Italic (600) */
+@font-face {
+    font-family: 'Flynas';
+    src: url('./fonts/Flynas-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Bold Italic (700) */
+@font-face {
+    font-family: 'Flynas';
+    src: url('./fonts/Flynas-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* ExtraBold Italic (800) */
+@font-face {
+    font-family: 'Flynas';
+    src: url('./fonts/Flynas-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Black Italic (900) */
+@font-face {
+    font-family: 'Flynas';
+    src: url('./fonts/Flynas-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@mixin font($family, $size, $weight, $color) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
+
+.head {
+    @include font("Flynas", 50px, 600, #212121);
+
+    @media (max-width: 575.98px) {
+        @include font("Flynas", 2.5em, 600, #212121);
+        line-height: 40px;
+    }
+
+    line-height: 60px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    span {
+        color: #DD3068;
+    }
+}
+
+
+.sub {
+    @include font("Flynas", 30px, 500, #00B7AC);
+    line-height: 30px;
+    margin-top: 20px;
+    letter-spacing: -0.03em;
+
+    span {
+        color: #DD3068;
+    }
+}
+
+.text {
+    @include font("Flynas", 20px, 400, #212121);
+    line-height: 30px;
+    letter-spacing: -3%;
+
+    @media (max-width: 575.98px) {
+        @include font("Flynas", 16px, 400, #212121);
+        line-height: 28px;
+    }
+}
+
+.hero {
+    h1 {
+        @include font("Flynas", 330px, 500, #00B7AC);
+        line-height: 333px;
+        letter-spacing: -0.03em;
+
+        @media (max-width: 575.98px) {
+            @include font("Flynas", 2.5em, 500, #00B7AC);
+            line-height: 40px;
+        }
+    }
+
+    .plane {
+        position: relative;
+        top: -10%;
+    }
+}
+
+.about-hero {
+    position: relative;
+    z-index: 3;
+    height: 100vh;
+
+    video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        z-index: -1;
+    }
+
+    .main-head {
+        @include font("Flynas", 4em, 600, white);
+
+        @media (max-width:575.98px) {
+            @include font("Flynas", 2.3em, 600, white);
+        }
+    }
+
+    h4 {
+        @include font("Flynas", 2em, 600, white);
+
+        @media (max-width:575.98px) {
+            @include font("Flynas", 1.2em, 600, white);
+        }
+    }
+
+}
+
+.about-text {
+    @include font("Flynas", 70px, 400, #212121);
+    line-height: 85px;
+    letter-spacing: -0.02em;
+
+    @media (max-width: 575.98px) {
+        @include font("Flynas", 1.2em, 400, #212121);
+        line-height: 30px;
+    }
+}
+
+.nasmiles-page {
+    background: linear-gradient(180deg, #FFFFFF 6.25%, rgb(221, 48, 104, 0.2) 52.88%, #FFFFFF 100%);
+
+}
+
+.nasmiles-card {
+    .card-title {
+        @include font("Flynas", 32px, 600, #212121);
+        line-height: 32px;
+        letter-spacing: -0.03em;
+
+        @media (max-width: 575.98px) {
+            @include font("Flynas", 1.5em, 600, #212121);
+            line-height: 30px;
+        }
+    }
+}
+
+/* Fleet page specific styles */
+.page-container-fleets {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    .fleet-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(135deg, #008a8a, #223b6e);
+        overflow: hidden;
+    }
+
+    .content-container {
+        position: relative;
+        z-index: 1;
+        padding: 5rem 3rem;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+
+    .page-title {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        text-align: center;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .text-highlight {
+        color: #00bbb4;
+    }
+
+    .fleet-info {
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .intro-text {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.5;
+        margin-bottom: 3rem;
+    }
+
+    /* Fleet Gallery */
+    .fleet-gallery {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .aircraft-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .aircraft-image-container {
+        position: relative;
+        height: 400px;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .aircraft-interaction {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 10;
+    }
+
+    .aircraft-image {
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+        transform-origin: center;
+        transition: transform 0.3s ease;
+        cursor: grab;
+    }
+
+    .drag-instructions {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .drag-icon {
+        width: 20px;
+        height: 20px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12h18M3 6h18M3 18h18'/%3E%3C/svg%3E");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .drag-instructions p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: white;
+    }
+
+    .aircraft-info {
+        padding: 2rem;
+    }
+
+    .aircraft-info h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        color: #9fd2c8;
+    }
+
+    .specs-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .spec-item {
+        background: rgba(0, 0, 0, 0.2);
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        text-align: center;
+    }
+
+    .spec-item h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: #9fd2c8;
+    }
+
+    .spec-item p {
+        font-size: 1.1rem;
+        color: white;
+    }
+
+    .aircraft-description {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    /* Navigation active state */
+    .nav-links a.active {
+        color: #00bbb4;
+        font-weight: 500;
+    }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 768px) {
+        .page-title {
+            font-size: 3rem;
+        }
+
+        .content-container {
+            padding: 4rem 2rem;
+        }
+
+        .aircraft-image-container {
+            height: 300px;
+        }
+
+        .aircraft-info h2 {
+            font-size: 2rem;
+        }
+
+        .specs-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .page-title {
+            font-size: 2.5rem;
+        }
+
+        .content-container {
+            padding: 3rem 1.5rem;
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+        }
+
+        .aircraft-image-container {
+            height: 200px;
+        }
+
+        .specs-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.destinations {
+    h2 {
+        color: #00bbb4;
+    }
+
+    .destination-card {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+
+        .card-title {
+            @include font("Flynas", 42px, 500, #212121);
+            line-height: 64px;
+
+            @media (max-width: 575.98px) {
+                @include font("Flynas", 1.5em, 500, #212121);
+                line-height: 30px;
+            }
+        }
+    }
+
+    .card-1 {
+        background-color: #BFEDEA;
+    }
+
+    .card-2 {
+        background-color: #FFF0B3;
+    }
+
+    .card-3 {
+        background-color: #E6F0CD;
+    }
+
+    .card-4 {
+        background-color: #F4E7DA;
+    }
+}
