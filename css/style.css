@@ -322,13 +322,15 @@ nav .saw {
   }
 }
 
+/* About text styles with animation support */
 .about-text {
   font-family: "Flynas";
   font-weight: 400;
   font-size: 70px;
   color: #212121;
-  line-height: 85px;
+  line-height: 65px;
   letter-spacing: -0.02em;
+  overflow: hidden;
 }
 @media (max-width: 575.98px) {
   .about-text {
@@ -338,6 +340,22 @@ nav .saw {
     color: #212121;
     line-height: 30px;
   }
+}
+.about-text .word {
+  display: inline-block;
+  margin-right: 0.25em;
+  overflow: hidden;
+}
+.about-text .char {
+  display: inline-block;
+  will-change: transform, opacity;
+  font-family: "Flynas";
+  font-weight: 400;
+  color: #212121;
+}
+
+.plane-about {
+  will-change: transform, opacity;
 }
 
 .nasmiles-page {
@@ -568,13 +586,17 @@ nav .saw {
 }
 .destinations .card-1 {
   background-color: #BFEDEA;
+  margin-top: 45px;
 }
 .destinations .card-2 {
+  margin-top: 145px;
   background-color: #FFF0B3;
 }
 .destinations .card-3 {
+  margin-top: 245px;
   background-color: #E6F0CD;
 }
 .destinations .card-4 {
+  margin-top: 345px;
   background-color: #F4E7DA;
 }/*# sourceMappingURL=style.css.map */
