@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flynas Boarding Pass</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Flynas', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 30px;
+        }
+
+        .boarding-pass {
+            background-color: white;
+            border-radius: 25px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .boarding-pass-container {
+            display: flex;
+            min-height: 350px;
+        }
+
+        .main-section {
+            flex: 2;
+            padding: 25px;
+            border-right: 1px dashed #ccc;
+            position: relative;
+        }
+
+        .side-section {
+            flex: 1;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flynas-logo {
+            color: #00BFB2;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .flynas-arabic {
+            color: #00BFB2;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .passenger-name {
+            color: #00BFB2;
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .flight-info {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .flight-from,
+        .flight-to {
+            color: #00BFB2;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .boarding-title {
+            color: #00BFB2;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .boarding-title-en {
+            color: #00BFB2;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .passenger-info-label {
+            color: #888;
+            font-size: 0.8rem;
+            margin-bottom: 0;
+        }
+
+        .passenger-info-value {
+            color: #00BFB2;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .time-notice {
+            display: flex;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .time-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #00BFB2;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .time-text {
+            font-size: 0.7rem;
+            color: #666;
+        }
+
+        .ref-code {
+            transform: rotate(-90deg);
+            position: absolute;
+            top: 70px;
+            left: -40px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        .website {
+            color: #00BFB2;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons {
+            display: flex;
+            margin-left: 10px;
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            background-color: #00BFB2;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 5px;
+            font-size: 0.7rem;
+        }
+
+        @media (max-width: 768px) {
+            .boarding-pass-container {
+                flex-direction: column;
+            }
+
+            .main-section {
+                border-right: none;
+                border-bottom: 1px dashed #ccc;
+            }
+
+            .passenger-name {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boarding-pass">
+        <div class="boarding-pass-container">
+            <div class="main-section">
+                <div class="ref-code ms-4">Ref: CGP5_017</div>
+                <div class="d-flex align-items-center">
+                    <div>
+                        <div class="flynas-logo ms-5">
+                            <img src="assets/icons/logo.svg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="time-notice ms-auto">
+                        <div class="time-icon">15<br>MIN</div>
+                        <div class="time-text">
+                            تغلق البوابة قبل 15 دقيقة من الإقلاع<br>
+                            GATE CLOSES 15 MIN BEFORE DEPARTURE TIME
+                        </div>
+                    </div>
+                </div>
+
+                <div class="passenger-name ms-5 ps-5 fw-bold">Lorem ipsum</div>
+
+                <div class="flight-info mb-5">
+                    <div class="flight-from mb-2 ms-5 ps-5">from:</div>
+                    <div class="flight-to ms-5 ps-5">to:</div>
+                </div>
+
+                <div class="boarding-title">بطاقة صعود الطائرة</div>
+                <div class="boarding-title-en">BOARDING PASS</div>
+            </div>
+
+            <div class="side-section">
+                <div>
+                    <div class="boarding-title">بطاقة صعود الطائرة</div>
+                    <div class="boarding-title-en">BOARDING PASS</div>
+                </div>
+
+                <div class="mt-3">
+                    <p class="passenger-info-label">اسم الراكب<br>GUEST NAME</p>
+                    <p class="passenger-info-value">Lorem ipsum</p>
+                </div>
+
+                <div>
+                    <p class="passenger-info-label">من<br>FROM</p>
+                    <p class="passenger-info-value">Lorem ipsum</p>
+                </div>
+
+                <div>
+                    <p class="passenger-info-label">إلى<br>TO</p>
+                    <p class="passenger-info-value">Lorem ipsum</p>
+                </div>
+
+                <div class="website mt-auto">
+                    flynas.com
+                    <div class="social-icons">
+                        <div class="social-icon">f</div>
+                        <div class="social-icon">x</div>
+                        <div class="social-icon">in</div>
+                        <div class="social-icon">yt</div>
+                        <div class="social-icon">in</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
